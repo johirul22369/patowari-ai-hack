@@ -238,17 +238,17 @@
             display: none;
             z-index: 9999;
             background:
-                radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.34) 0%, transparent 58%),
-                radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.22) 0%, transparent 55%),
+                radial-gradient(circle at 50% 0%, rgba(16, 185, 129, 0.36) 0%, transparent 58%),
+                radial-gradient(circle at 100% 100%, rgba(245, 158, 11, 0.24) 0%, transparent 55%),
                 linear-gradient(165deg, #0b2524 0%, #09111e 50%, #04070e 100%);
             border-radius: 20px;
-            padding: 7px;
+            padding: 7.5px;
             box-shadow:
                 0 22px 44px rgba(0, 0, 0, 0.96),
-                0 0 22px rgba(16, 185, 129, 0.38),
-                0 0 12px rgba(250, 204, 21, 0.25),
-                inset 0 1px 1.5px rgba(255, 255, 255, 0.32);
-            border: 1.5px solid rgba(250, 204, 21, 0.78);
+                0 0 24px rgba(16, 185, 129, 0.4),
+                0 0 14px rgba(250, 204, 21, 0.28),
+                inset 0 1px 1.5px rgba(255, 255, 255, 0.34);
+            border: 1.5px solid rgba(250, 204, 21, 0.82);
             backdrop-filter: blur(12px);
             animation: eagleSlowFloat 4.2s ease-in-out infinite;
         }
@@ -258,7 +258,7 @@
             align-items: center;
             justify-content: space-between;
             gap: 3px;
-            margin-bottom: 4.5px;
+            margin-bottom: 5px;
             cursor: grab;
             touch-action: none;
             padding: 2px 3px 4px;
@@ -397,17 +397,18 @@
 
         .ai-call-banner {
             margin-bottom: 5px;
-            padding: 3px 5px;
-            border-radius: 8px;
-            background: linear-gradient(90deg, rgba(16, 185, 129, 0.22), rgba(245, 158, 11, 0.22));
-            border: 1px solid rgba(250, 204, 21, 0.45);
-            font-size: 7px;
+            padding: 3.5px 6px;
+            border-radius: 9px;
+            background: linear-gradient(90deg, rgba(16, 185, 129, 0.25), rgba(245, 158, 11, 0.25));
+            border: 1px solid rgba(250, 204, 21, 0.52);
+            font-size: 7.2px;
             font-weight: 800;
             color: #fef08a;
             text-align: center;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+            box-shadow: 0 0 12px rgba(250, 204, 21, 0.16);
         }
 
         .pred-grid {
@@ -750,7 +751,7 @@
         }
 
         .winloss-bar {
-            margin-top: 4.5px;
+            margin-top: 5px;
             display: grid;
             grid-template-columns: 1fr 1.1fr 1fr;
             gap: 3px;
@@ -791,11 +792,11 @@
         }
 
         .recent-box {
-            margin-top: 4.5px;
+            margin-top: 5px;
             background: linear-gradient(180deg, rgba(6, 24, 29, 0.96), rgba(3, 8, 17, 0.98));
             border: 1px solid rgba(52, 211, 153, 0.32);
-            border-radius: 8px;
-            padding: 4px;
+            border-radius: 9px;
+            padding: 4.5px;
         }
 
         .recent-head {
@@ -861,46 +862,8 @@
         .w-violet-green { background: conic-gradient(#a855f7 0deg 180deg, #22c55e 180deg 360deg); }
         .w-violet-red { background: conic-gradient(#a855f7 0deg 180deg, #ef4444 180deg 360deg); }
 
-        .voice-listen-box {
-            margin-top: 4.5px;
-            background: rgba(4, 14, 18, 0.96);
-            border: 1px solid rgba(250, 204, 21, 0.42);
-            border-radius: 8px;
-            padding: 3.5px 4px;
-            text-align: center;
-        }
-
-        .mic-speak-btn {
-            width: 100%;
-            background: linear-gradient(135deg, #f43f5e 0%, #ec4899 50%, #f59e0b 100%);
-            color: #ffffff;
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            border-radius: 6px;
-            padding: 3.5px 6px;
-            font-size: 6.8px;
-            cursor: pointer;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85);
-            box-shadow: 0 0 10px rgba(244, 63, 94, 0.45);
-        }
-
-        .mic-speak-btn.listening {
-            background: linear-gradient(135deg, #22c55e, #10b981);
-            color: #052e16;
-            text-shadow: none;
-            box-shadow: 0 0 14px rgba(34, 197, 94, 0.85);
-        }
-
-        .ai-reply-text {
-            margin-top: 2.5px;
-            font-size: 6.9px;
-            color: #fde68a;
-            line-height: 1.25;
-            font-weight: 700;
-            text-align: center;
-        }
-
         .bottom-action-bar {
-            margin-top: 4.5px;
+            margin-top: 5px;
             width: 100%;
         }
 
@@ -909,8 +872,8 @@
             background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 55%, #d97706 100%);
             color: #1c1917;
             border: 1px solid #fef08a;
-            border-radius: 8px;
-            padding: 4.5px 7px;
+            border-radius: 9px;
+            padding: 5px 7px;
             font-size: 7px;
             text-decoration: none;
             letter-spacing: 0.45px;
@@ -1095,11 +1058,6 @@
             <div class="wheel-strip" id="recent-wheels"></div>
         </div>
 
-        <div class="voice-listen-box">
-            <button type="button" class="mic-speak-btn text-3d" id="mic-speak-btn" onclick="startVoiceListening()">🎤 চাপ দিয়ে কথা বলো</button>
-            <div class="ai-reply-text" id="ai-reply-text">👩 তোমার কথা শুনে রিপ্লাই দেবো।</div>
-        </div>
-
         <div class="bottom-action-bar">
             <a href="https://t.me/patowari_vai_69x" target="_blank" rel="noopener noreferrer" class="telegram-join-btn text-3d">
                 <svg width="10" height="10" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1126,12 +1084,12 @@
         let isUnlocked = localStorage.getItem("patowari_hack_unlocked") === "true";
         let voiceEnabled = localStorage.getItem("patowari_voice_enabled") !== "false";
         let cachedPeriod = "";
-        let lastSpokenPeriod = "";
+        let lastEvaluatedPeriod = "";
         let cachedPrediction = { type: "BIG", num: 7, confidence: 86, colorName: "GREEN" };
+        let previousPrediction = null;
         let signalTimerStarted = false;
         let winCount = 0;
         let lossCount = 0;
-        let activeRecognizer = null;
 
         updateVoiceButtonUI();
 
@@ -1146,7 +1104,8 @@
                 currentMarket = btn.dataset.market;
                 document.getElementById("mode-subtitle").innerText = MARKETS[currentMarket].label;
                 cachedPeriod = "";
-                lastSpokenPeriod = "";
+                lastEvaluatedPeriod = "";
+                previousPrediction = null;
                 updateSignalLogic();
                 if (voiceEnabled) {
                     speakFemaleBangla(`${MARKETS[currentMarket].bnName} মার্কেট চালু হয়েছে।`);
@@ -1192,8 +1151,11 @@
             return anyFemale || null;
         }
 
-        function speakFemaleBangla(text) {
-            if (!voiceEnabled || !("speechSynthesis" in window) || !text) return;
+        function speakFemaleBangla(text, onDone) {
+            if (!voiceEnabled || !("speechSynthesis" in window) || !text) {
+                if (typeof onDone === "function") onDone();
+                return;
+            }
             try {
                 window.speechSynthesis.cancel();
                 const utter = new SpeechSynthesisUtterance(text);
@@ -1205,16 +1167,14 @@
                 utter.pitch = 1.24;
                 utter.rate = 1.02;
                 utter.volume = 1;
+                if (typeof onDone === "function") {
+                    utter.onend = onDone;
+                    utter.onerror = onDone;
+                }
                 window.speechSynthesis.speak(utter);
-            } catch (_) {}
-        }
-
-        function setReplyAndSpeak(replyText) {
-            const replyEl = document.getElementById("ai-reply-text");
-            if (replyEl) {
-                replyEl.textContent = `👩 ${replyText}`;
+            } catch (_) {
+                if (typeof onDone === "function") onDone();
             }
-            speakFemaleBangla(replyText);
         }
 
         function getTradeCallSentence(pred) {
@@ -1227,101 +1187,40 @@
         function triggerWinResult() {
             winCount++;
             document.getElementById("wl-status").textContent = `W: ${winCount} | L: ${lossCount}`;
-            setReplyAndSpeak("অভিনন্দন! এই ট্রেড উইন হয়েছে!");
+            document.getElementById("ai-call-banner").textContent = "🏆 অভিনন্দন! এই ট্রেড উইন হয়েছে!";
+            speakFemaleBangla("অভিনন্দন! এই ট্রেড উইন হয়েছে!");
         }
 
         function triggerLossResult() {
             lossCount++;
             document.getElementById("wl-status").textContent = `W: ${winCount} | L: ${lossCount}`;
-            setReplyAndSpeak("দুঃখিত, এই ট্রেড লস হয়েছে। পরের ট্রেডের জন্য রেডি থাকো!");
+            document.getElementById("ai-call-banner").textContent = "❌ দুঃখিত, এই ট্রেড লস হয়েছে!";
+            speakFemaleBangla("দুঃখিত, এই ট্রেড লস হয়েছে!");
         }
 
-        function buildReplyFromSpokenText(spokenText) {
-            const lower = (spokenText || "").toLowerCase();
-            const tradeCall = getTradeCallSentence(cachedPrediction);
-            const numBn = BANGLA_DIGITS[cachedPrediction.num] ?? cachedPrediction.num;
-            let colorBn = "গ্রিন";
-            if (cachedPrediction.colorName.includes("RED") && cachedPrediction.colorName.includes("VIOLET")) {
-                colorBn = "ভায়োলেট ও রেড";
-            } else if (cachedPrediction.colorName.includes("GRN") && cachedPrediction.colorName.includes("VIOLET")) {
-                colorBn = "ভায়োলেট ও গ্রিন";
-            } else if (cachedPrediction.colorName.includes("RED")) {
-                colorBn = "রেড";
-            }
-
-            if (/কেমন আছ|কি খবর|হ্যালো|হাই|সালাম/.test(lower)) {
-                return `আমি একদম ভালো আছি! ${tradeCall} নম্বর ${numBn}, কালার ${colorBn}।`;
-            }
-            if (/সিগন্যাল|কোনটা|ধরব|ধরবো|প্রেডিকশন|নম্বর|কালার|বিগ|স্মল|ট্রেড|কি বলছে|কী বলছে/.test(lower)) {
-                return `${tradeCall} নম্বর ${numBn}, কালার ${colorBn}। কনফিডেন্স ${cachedPrediction.confidence} পার্সেন্ট।`;
-            }
-            if (/উইন|লস|রেজাল্ট|হিসাব|স্কোর/.test(lower)) {
-                return `এখন পর্যন্ত ${winCount} বার উইন এবং ${lossCount} বার লস হয়েছে।`;
-            }
-            if (/টিপস|বাজেট|কিভাবে|কত/.test(lower)) {
-                return "ধৈর্য ধরে ছোট অ্যামাউন্ট দিয়ে ট্রেড করো, একসাথে সব ব্যালেন্স না লাগিয়ে নিয়ম মেনে চলো।";
-            }
-            return `${tradeCall} এখন নম্বর ${numBn} (${colorBn}) পজিশনে আছে।`;
+        function checkPreviousTradeOutcome(slotNum, cfg, dateSeed, prevPred) {
+            const outcomeHash = mixHash((dateSeed ^ Math.imul(slotNum, cfg.salt) ^ 0x517CC1B7) >>> 0);
+            const actualIsBig = (outcomeHash % 100) >= 50;
+            const predictedIsBig = prevPred.type === "BIG";
+            return predictedIsBig === actualIsBig;
         }
 
-        function startVoiceListening() {
-            const micBtn = document.getElementById("mic-speak-btn");
-            const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
-
-            if (!SpeechRec) {
-                const fallbackReply = buildReplyFromSpokenText("সিগন্যাল");
-                setReplyAndSpeak(fallbackReply);
-                return;
-            }
-
-            if (activeRecognizer) {
-                try { activeRecognizer.stop(); } catch (_) {}
-                activeRecognizer = null;
-            }
-
-            const rec = new SpeechRec();
-            activeRecognizer = rec;
-            rec.lang = "bn-BD";
-            rec.interimResults = false;
-            rec.maxAlternatives = 1;
-
-            micBtn.classList.add("listening");
-            micBtn.textContent = "🎧 শুনছি... কথা বলো";
-            document.getElementById("ai-reply-text").textContent = "🎧 তোমার কথা শুনছি...";
-
-            rec.onresult = (event) => {
-                const transcript = event.results?.[0]?.[0]?.transcript || "";
-                const reply = buildReplyFromSpokenText(transcript);
-                setReplyAndSpeak(reply);
-            };
-
-            rec.onerror = () => {
-                const reply = buildReplyFromSpokenText("সিগন্যাল");
-                setReplyAndSpeak(reply);
-            };
-
-            rec.onend = () => {
-                micBtn.classList.remove("listening");
-                micBtn.textContent = "🎤 চাপ দিয়ে কথা বলো";
-                activeRecognizer = null;
-            };
-
-            try {
-                rec.start();
-            } catch (_) {
-                micBtn.classList.remove("listening");
-                micBtn.textContent = "🎤 চাপ দিয়ে কথা বলো";
-                const reply = buildReplyFromSpokenText("সিগন্যাল");
-                setReplyAndSpeak(reply);
-            }
-        }
-
-        function announcePredictionBangla(pred) {
+        function announcePeriodUpdateBangla(pred, prevOutcomeText) {
             const callText = getTradeCallSentence(pred);
-            document.getElementById("ai-call-banner").textContent = `👩 ${callText}`;
-            if (!voiceEnabled) return;
             const numBn = BANGLA_DIGITS[pred.num] ?? pred.num;
-            speakFemaleBangla(`${callText} নম্বর ${numBn}।`);
+            document.getElementById("ai-call-banner").textContent = `👩 ${callText}`;
+
+            if (!voiceEnabled) return;
+
+            if (prevOutcomeText) {
+                speakFemaleBangla(prevOutcomeText, () => {
+                    setTimeout(() => {
+                        speakFemaleBangla(`${callText} নম্বর ${numBn}।`);
+                    }, 350);
+                });
+            } else {
+                speakFemaleBangla(`${callText} নম্বর ${numBn}।`);
+            }
         }
 
         function handleIconClick() {
@@ -1521,9 +1420,26 @@
             document.getElementById('period-num').innerText = fullPeriod;
             document.getElementById('timer-display').innerText = `NEXT IN ${String(timeLeft).padStart(2, '0')}s`;
 
+            let periodJustChanged = false;
+            let outcomeSentence = "";
+
             if (fullPeriod !== cachedPeriod) {
+                if (cachedPeriod && previousPrediction && periodIndexToday > 1) {
+                    const isWin = checkPreviousTradeOutcome(periodIndexToday - 1, cfg, dateSeed, previousPrediction);
+                    if (isWin) {
+                        winCount++;
+                        outcomeSentence = "অভিনন্দন! আগের ট্রেড উইন হয়েছে!";
+                    } else {
+                        lossCount++;
+                        outcomeSentence = "দুঃখিত, আগের ট্রেড লস হয়েছে!";
+                    }
+                    document.getElementById("wl-status").textContent = `W: ${winCount} | L: ${lossCount}`;
+                }
+
                 cachedPeriod = fullPeriod;
                 cachedPrediction = evaluateSlot(periodIndexToday, cfg, dateSeed);
+                previousPrediction = { ...cachedPrediction };
+                periodJustChanged = true;
             }
 
             const orb = document.getElementById('main-orb');
@@ -1539,7 +1455,9 @@
                 orb.className = "glow-orb orb-violet";
                 document.getElementById('color-label').innerText = "SCANNING";
                 confLabel.innerText = "SYNC...";
-                document.getElementById("ai-call-banner").textContent = "👩 সিগন্যাল স্ক্যান হচ্ছে, একটু অপেক্ষা করো...";
+                document.getElementById("ai-call-banner").textContent = outcomeSentence
+                    ? `👩 ${outcomeSentence}`
+                    : "👩 সিগন্যাল স্ক্যান হচ্ছে, একটু অপেক্ষা করো...";
                 smallPanel.classList.remove('is-predicted');
                 bigPanel.classList.remove('is-predicted');
                 smallTag.innerText = "WAIT";
@@ -1568,11 +1486,11 @@
                     bigTag.innerText = "SKIP";
                     bigTag.className = "panel-tag text-3d";
                 }
+            }
 
-                if (lastSpokenPeriod !== fullPeriod) {
-                    lastSpokenPeriod = fullPeriod;
-                    setTimeout(() => announcePredictionBangla(cachedPrediction), 1200);
-                }
+            if (periodJustChanged && lastEvaluatedPeriod !== fullPeriod) {
+                lastEvaluatedPeriod = fullPeriod;
+                announcePeriodUpdateBangla(cachedPrediction, outcomeSentence);
             }
 
             renderRecentWheels(cfg, periodIndexToday, dateSeed);
